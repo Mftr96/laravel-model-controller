@@ -1,3 +1,4 @@
 <header>
-    <a href="{{ route('home') }}">Home</a>
+    <a @class(['selected' => Route::currentRouteName() === 'home']) href="{{ route('home') }}">WELCOME</a>
+    <a @class(['selected' => Route::currentRouteName() === 'movies']) href="{{ route('movies') }}">Movies</a>
 </header>

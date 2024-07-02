@@ -42,3 +42,14 @@ Questo git-template fornisce lo scaffold di una web application realizzata con L
 	npm run dev
 	```
 - Puntare il browser all'indirizzo mostrato in terminale per controllare che tutto funzioni.
+
+----
+bonus:creazione di due rotte, con relativi metodi e viste 
+cosa mi serve:
+due rotte nel file web.php(una rotta ce l'ho già per la home, l'altra sarà movies)
+un metodo per movie nel ControllerPage
+creare la views  movie.blade.php
+
+procedimento :
+creo il file movie.blade.php
+creo la funzione public function movies nel file PageController

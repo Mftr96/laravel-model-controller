@@ -19,6 +19,8 @@ use App\Http\Controllers\Guest\PageController;
 
 //richiamo la rotta home tramite PageController
 Route::get('/',[PageController::class,"home"])->name("home");
+//bonus:richiamo la rott movies tramite PageController
+Route::get('/movies',[PageController::class,"movies"])->name("movies");
 
 
 // Route::get('/path', [PageController::class, "metodo"])->name("nomerotta");

@@ -2,7 +2,7 @@
 
 body {
     font-family: sans-serif;
-    background: #222;
+    background: pink;
     color: white;
 }
 
@@ -10,4 +10,8 @@ body {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+.selected{
+    color: yellow;
 }

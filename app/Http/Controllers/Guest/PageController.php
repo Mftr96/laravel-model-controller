@@ -21,4 +21,15 @@ class PageController extends Controller
         //la funzione restituisce il nome della pagina home conl'array $dati
         return view('home', $dati);
     }
+
+    //creo l'importazione dei dati per movies 
+    public function movies(){
+        $film = Movie::all();
+        //riporto la variabile nell'array $dati 
+        $dati = [
+            "film" => $film,
+        ];
+        //la funzione restituisce il nome della pagina home conl'array $dati
+        return view('movies', $dati);
+    }
 }
