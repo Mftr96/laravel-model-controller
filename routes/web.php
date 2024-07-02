@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+//devo aggiungere PageController sennò da errore undefined type 
+use App\Http\Controllers\Guest\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,7 +15,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    $dati = config("data");
-    return view('home', $dati);
-})->name("home");
+
+
+//richiamo la rotta home tramite PageController
+Route::get('/',[PageController::class,"home"])->name("home");
+
+
+// Route::get('/path', [PageController::class, "metodo"])->name("nomerotta");
+
